@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalle - Casa de Campo Santa Rosa</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body class="body-detalle">
+
+<nav class="navbar navbar-expand-lg navbar-dark nav-custom">
+<div class="container-fluid">
+<a class="navbar-brand" href="index.html">
+<img src="img/logo.png" alt="El Refugio Campestre" class="logo">
+</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav me-auto">
+<li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Redes sociales</a></li>
+</ul>
+</div>
+<div class="d-flex">
+<button type="button" class="btn btn-registro me-2" id="registerBtn">Registrarse</button>
+<button type="button" class="btn btn-iniciar-sesion" id="loginBtn">Iniciar sesión</button>
+</div>
+</div>
+</nav>
+
+<section class="detalle-gallery-section">
+<div class="container-fluid gx-0">
+<div class="row g-0">
+<div class="col-lg-8 col-md-7">
+<div class="detalle-left-column">
+<h1 class="casa-title-detalle">Santa Rosa</h1>
+<div id="casa-gallery" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="img/casa_santa_rosa.jpg" class="d-block w-100" alt="Exterior Casa Santa Rosa">
+</div>
+
+<div class="carousel-item">
+<img src="img/casa_santa_rosa_2.jpg" class="d-block w-100" alt="Interior Casa Santa Rosa">
+</div>
+
+<div class="carousel-item">
+<img src="img/casa_santa_rosa_3.jpg" class="d-block w-100" alt="Detalle Casa Santa Rosa">
+</div>
+
+<div class="carousel-item">
+<img src="img/casa_santa_rosa_4.jpg" class="d-block w-100" alt="Otra vista Casa Santa Rosa">
+</div>
+
+<div class="carousel-item">
+<img src="img/casa_santa_rosa_5.jpg" class="d-block w-100" alt="Otra vista Casa Santa Rosa">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#casa-gallery" data-bs-slide="prev">
+<span class="carousel-icon" aria-hidden="true">❮</span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#casa-gallery" data-bs-slide="next">
+<span class="carousel-icon" aria-hidden="true">❯</span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+
+<div class="text-center">
+<a href="reserva.html" class="btn btn-reservar-detalle">RESERVAR AHORA</a>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-5">
+<div class="info-panel">
+<h3>Información y servicios:</h3>
+<p>Es una zona muy tranquila y segura, los centros comerciales están a cuatro minutos, supermercados a dos minutos, encontrarán restaurantes muy cercanos sin necesidad de tomar alguna movilidad, igualmente tenemos muy cerca servicio de taxis, farmacias y demás. El hotel está ubicado en una urbanización.</p>
+<ul>
+<li>Casa de Campo Santa Rosa tiene vistas al jardín.</li>
+<li>Cuenta con restaurante, servicio de traslado gratuito, bar, jardín y terraza.</li>
+<li>La casa rural ofrece wifi y parking privado, ambos gratis.</li>
+<li>Todas las unidades tienen baño privado totalmente equipado con bidet y artículos de aseo gratuitos.</li>
+<li>El desayuno ofrece opciones buffet, continentales o americanas.</li>
+<li>Hay servicio de alquiler de bicicletas y servicio de alquiler de coches en Casa de Campo Santa Rosa.</li>
+<li>El aeropuerto está a 5 km.</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content modal-login-content">
+<div class="modal-body">
+<button type="button" class="btn-close btn-close-white float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+<h5 class="modal-title-custom" id="loginModalLabel">INICIAR SESION</h5>
+<form class="form-custom-design text-start mt-4">
+<div class="mb-3">
+<label for="login-username" class="form-label">Usuario:</label>
+<input type="text" class="form-control" id="login-username" placeholder="Ingresar usuario">
+</div>
+<div class="mb-3 position-relative">
+<label for="login-password" class="form-label">Contraseña:</label>
+<input type="password" class="form-control" id="login-password" placeholder="Ingresar contraseña">
+<i class="fas fa-eye-slash" id="togglePassword"></i>
+</div>
+<div class="d-grid mb-3">
+<button type="submit" class="btn btn-action-primary">INICIAR SESIÓN</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content modal-registro-content">
+<button type="button" class="btn-close btn-close-white float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+<h5 class="modal-title-custom" id="registroModalLabel">REGISTRARSE</h5>
+<form class="form-custom-design" id="registroForm" novalidate>
+<div class="mb-3">
+<label for="registro-nombre" class="form-label">Nombre:</label>
+<input type="text" class="form-control" id="registro-nombre" placeholder="Ingresar nombre(s)" required>
+</div>
+<div class="mb-3">
+<label for="registro-apellido" class="form-label">Apellido:</label>
+<input type="text" class="form-control" id="registro-apellido" placeholder="Ingresar Apellidos" required>
+</div>
+<div class="mb-3 position-relative">
+<label for="registro-password" class="form-label">Contraseña:</label>
+<div class="registro-input-wrapper">
+<input type="password" class="form-control" id="registro-password" placeholder="Ingresar contraseña" required>
+<i class="fas fa-eye-slash" id="toggleRegistroPassword"></i>
+</div>
+</div>
+<div class="d-grid mt-4">
+<button type="submit" id="registroSubmitBtn" class="btn btn-action-primary" disabled>REGISTRARSE</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
