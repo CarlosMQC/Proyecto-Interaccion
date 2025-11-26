@@ -1,6 +1,3 @@
-/* ============================================= */
-/* --- Fuentes y Colores Base (Tu PPTX)      --- */
-/* ============================================= */
 body {
     background-color: #FAF8F1;
     color: #3B322C;
@@ -12,9 +9,6 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     font-weight: 700;
 }
 
-/* ============================================= */
-/* 1. Barra de Navegación (Header)               */
-/* ============================================= */
 .nav-custom {
     background-color: #36454F;
     padding: 10px 20px;
@@ -36,7 +30,6 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     color: #A3B18A;
 }
 
-/* Botones del Header */
 .btn-registro {
     background-color: #855838;
     color: #FAF8F1;
@@ -45,7 +38,11 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     border-radius: 8px;
     padding: 8px 20px;
 }
-.btn-registro:hover { background-color: #6a462d; color: #FAF8F1; }
+
+.btn-registro:hover {
+    background-color: #6a462d;
+    color: #FAF8F1;
+}
 
 .btn-iniciar-sesion {
     background-color: #6A994E;
@@ -55,11 +52,12 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     border-radius: 8px;
     padding: 8px 20px;
 }
-.btn-iniciar-sesion:hover { background-color: #557a3e; color: #FAF8F1; }
 
-/* ============================================= */
-/* 2. Sección Hero (Buscador)                    */
-/* ============================================= */
+.btn-iniciar-sesion:hover {
+    background-color: #557a3e;
+    color: #FAF8F1;
+}
+
 .hero-section {
     background-color: #A3B18A;
     padding: 40px 20px;
@@ -88,7 +86,10 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     border: none;
     border-radius: 8px;
 }
-.search-widget .btn-reservar:hover { background-color: #2a4646; }
+
+.search-widget .btn-reservar:hover {
+    background-color: #2a4646;
+}
 
 .hero-image {
     width: 100%;
@@ -98,9 +99,6 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     border-radius: 10px;
 }
 
-/* ============================================= */
-/* 3. Sección Carrusel Casas (Página Principal)  */
-/* ============================================= */
 .casas-section {
     background-color: #D8C3A5;
     padding: 40px 20px;
@@ -112,7 +110,10 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     margin-bottom: 30px;
 }
 
-.carousel-inner-scroll { overflow: hidden; }
+.carousel-inner-scroll {
+    overflow: hidden;
+}
+
 .scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -122,27 +123,37 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.scrolling-wrapper::-webkit-scrollbar { display: none; }
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
 
 .room-card-wrapper {
     width: 290px;
-    flex-shrink: 0;     
+    flex-shrink: 0;
     padding: 0 10px;
     box-sizing: border-box;
 }
 
-.casa-link { text-decoration: none; }
+.casa-link {
+    text-decoration: none;
+}
 
 .room-card {
     border: none;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.room-card:hover { transform: translateY(-5px); }
 
-.room-image-container { position: relative; }
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.room-image-container {
+    position: relative;
+}
 
 .room-card .card-img-top {
     height: 220px;
@@ -159,10 +170,9 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     padding: 5px 15px;
     border-radius: 5px;
     font-size: 1.3rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Flechas del carrusel de scroll (Inicio) */
 #scrolling-carousel .carousel-control-prev,
 #scrolling-carousel .carousel-control-next {
     width: 50px;
@@ -179,22 +189,29 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     line-height: 40px;
     text-shadow: none;
 }
-#scrolling-carousel .carousel-control-prev { left: -25px; }
-#scrolling-carousel .carousel-control-next { right: -25px; }
-#scrolling-carousel .carousel-control-prev:hover,
-#scrolling-carousel .carousel-control-next:hover { background-color: #b04a2d; }
 
-/* ============================================= */
-/* 4. Modales (Login/Registro)                   */
-/* ============================================= */
-.form-custom-design .form-label, .form-green-design .form-label {
+#scrolling-carousel .carousel-control-prev {
+    left: -25px;
+}
+
+#scrolling-carousel .carousel-control-next {
+    right: -25px;
+}
+
+#scrolling-carousel .carousel-control-prev:hover,
+#scrolling-carousel .carousel-control-next:hover {
+    background-color: #b04a2d;
+}
+
+.form-custom-design .form-label,
+.form-green-design .form-label {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-/* Inputs Generales */
-.form-custom-design .form-control, .form-green-design .form-control {
+.form-custom-design .form-control,
+.form-green-design .form-control {
     border-radius: 0;
     padding: 10px 15px;
     height: 45px;
@@ -203,8 +220,8 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     color: #333;
 }
 
-/* Estilos Modal Verde (Registro y Login) */
-.modal-registro-green, .modal-login-green {
+.modal-registro-green,
+.modal-login-green {
     background-color: #9FB38E;
     border-radius: 0;
     padding: 2rem;
@@ -232,9 +249,8 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     margin: 0;
 }
 
-/* Botón Naranja (Registro/Login) */
 .btn-registro-orange {
-    background-color: #D65A31 !important; /* Naranja Terracota */
+    background-color: #D65A31 !important;
     color: #000000 !important;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
@@ -246,17 +262,18 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     display: block;
     transition: background 0.3s;
 }
+
 .btn-registro-orange:hover:not(:disabled) {
     background-color: #b54521 !important;
     color: #fff !important;
 }
+
 .btn-registro-orange:disabled {
     background-color: #a86b56 !important;
     color: #333 !important;
     opacity: 0.7;
 }
 
-/* Enlace Login */
 .forgot-password-link-dark {
     color: #000000;
     text-decoration: none;
@@ -264,13 +281,18 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     font-weight: 700;
     font-size: 1.1rem;
 }
-.forgot-password-link-dark:hover { text-decoration: underline; color: #333; }
+
+.forgot-password-link-dark:hover {
+    text-decoration: underline;
+    color: #333;
+}
 
 .social-login-container {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
+
 .social-btn {
     width: 45px;
     height: 45px;
@@ -282,11 +304,21 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     font-size: 1.2rem;
     transition: transform 0.2s;
 }
-.social-btn:hover { transform: scale(1.1); }
-.google-btn { color: #DB4437; }
-.facebook-btn { color: #4267B2; }
 
-#toggleRegistroPassword, #togglePassword {
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.google-btn {
+    color: #DB4437;
+}
+
+.facebook-btn {
+    color: #4267B2;
+}
+
+#toggleRegistroPassword,
+#togglePassword {
     position: absolute;
     top: 50%;
     right: 20px;
@@ -294,9 +326,12 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     cursor: pointer;
     color: #333;
 }
-.registro-input-wrapper, .mb-3.position-relative { position: relative; }
 
-/* Checkbox en registro */
+.registro-input-wrapper,
+.mb-3.position-relative {
+    position: relative;
+}
+
 .form-green-design .form-check-input {
     border: 1px solid #000;
     border-radius: 0;
@@ -304,10 +339,12 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     height: 20px;
     background-color: transparent;
 }
+
 .form-green-design .form-check-input:checked {
     background-color: #000;
     border-color: #000;
 }
+
 .form-green-design .form-check-label {
     color: #000000;
     font-size: 0.9rem;
@@ -316,27 +353,26 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     line-height: 1.2;
 }
 
-/* ============================================= */
-/* 5. Páginas de Detalle (TODAS LAS CASAS)       */
-/* ============================================= */
-
 .body-detalle {
-    background-color: #A3B18A !important; /* Fondo Verde */
+    background-color: #A3B18A !important;
 }
 
-.detalle-gallery-section { padding: 2rem 0; }
-.detalle-left-column { padding: 1rem 2rem; }
+.detalle-gallery-section {
+    padding: 2rem 0;
+}
+
+.detalle-left-column {
+    padding: 1rem 2rem;
+}
 
 .casa-title-detalle {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
-    color: #000000; /* Título Negro */
+    color: #000000;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-/* --- ESTILOS MAESTROS PARA TODAS LAS GALERÍAS --- */
-/* Contenedor del Carrusel */
 #casa-gallery,
 #casa-gallery-san-roque,
 #casa-gallery-ensenada,
@@ -347,11 +383,10 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
 #casa-gallery-serranos {
     border-radius: 15px;
     overflow: hidden;
-    border: none; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Imágenes del Carrusel (Fijas) */
 #casa-gallery .carousel-item img,
 #casa-gallery-san-roque .carousel-item img,
 #casa-gallery-ensenada .carousel-item img,
@@ -365,18 +400,25 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     width: 100%;
 }
 
-/* Botones Naranjas del Carrusel */
-#casa-gallery .carousel-control-prev, #casa-gallery .carousel-control-next,
-#casa-gallery-san-roque .carousel-control-prev, #casa-gallery-san-roque .carousel-control-next,
-#casa-gallery-ensenada .carousel-control-prev, #casa-gallery-ensenada .carousel-control-next,
-#casa-gallery-cipreses .carousel-control-prev, #casa-gallery-cipreses .carousel-control-next,
-#casa-gallery-sausalito .carousel-control-prev, #casa-gallery-sausalito .carousel-control-next,
-#casa-gallery-dorado .carousel-control-prev, #casa-gallery-dorado .carousel-control-next,
-#casa-gallery-namora .carousel-control-prev, #casa-gallery-namora .carousel-control-next,
-#casa-gallery-serranos .carousel-control-prev, #casa-gallery-serranos .carousel-control-next {
+#casa-gallery .carousel-control-prev,
+#casa-gallery .carousel-control-next,
+#casa-gallery-san-roque .carousel-control-prev,
+#casa-gallery-san-roque .carousel-control-next,
+#casa-gallery-ensenada .carousel-control-prev,
+#casa-gallery-ensenada .carousel-control-next,
+#casa-gallery-cipreses .carousel-control-prev,
+#casa-gallery-cipreses .carousel-control-next,
+#casa-gallery-sausalito .carousel-control-prev,
+#casa-gallery-sausalito .carousel-control-next,
+#casa-gallery-dorado .carousel-control-prev,
+#casa-gallery-dorado .carousel-control-next,
+#casa-gallery-namora .carousel-control-prev,
+#casa-gallery-namora .carousel-control-next,
+#casa-gallery-serranos .carousel-control-prev,
+#casa-gallery-serranos .carousel-control-next {
     width: 60px;
     height: 60px;
-    background-color: #D95D39; 
+    background-color: #D95D39;
     border: 2px solid #FFFFFF;
     border-radius: 50%;
     opacity: 1;
@@ -387,7 +429,6 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     justify-content: center;
 }
 
-/* Posición de las flechas (Adentro) */
 #casa-gallery .carousel-control-prev,
 #casa-gallery-san-roque .carousel-control-prev,
 #casa-gallery-ensenada .carousel-control-prev,
@@ -410,20 +451,26 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     right: 20px !important;
 }
 
-/* Efecto Hover */
-#casa-gallery .carousel-control-prev:hover, #casa-gallery .carousel-control-next:hover,
-#casa-gallery-san-roque .carousel-control-prev:hover, #casa-gallery-san-roque .carousel-control-next:hover,
-#casa-gallery-ensenada .carousel-control-prev:hover, #casa-gallery-ensenada .carousel-control-next:hover,
-#casa-gallery-cipreses .carousel-control-prev:hover, #casa-gallery-cipreses .carousel-control-next:hover,
-#casa-gallery-sausalito .carousel-control-prev:hover, #casa-gallery-sausalito .carousel-control-next:hover,
-#casa-gallery-dorado .carousel-control-prev:hover, #casa-gallery-dorado .carousel-control-next:hover,
-#casa-gallery-namora .carousel-control-prev:hover, #casa-gallery-namora .carousel-control-next:hover,
-#casa-gallery-serranos .carousel-control-prev:hover, #casa-gallery-serranos .carousel-control-next:hover {
+#casa-gallery .carousel-control-prev:hover,
+#casa-gallery .carousel-control-next:hover,
+#casa-gallery-san-roque .carousel-control-prev:hover,
+#casa-gallery-san-roque .carousel-control-next:hover,
+#casa-gallery-ensenada .carousel-control-prev:hover,
+#casa-gallery-ensenada .carousel-control-next:hover,
+#casa-gallery-cipreses .carousel-control-prev:hover,
+#casa-gallery-cipreses .carousel-control-next:hover,
+#casa-gallery-sausalito .carousel-control-prev:hover,
+#casa-gallery-sausalito .carousel-control-next:hover,
+#casa-gallery-dorado .carousel-control-prev:hover,
+#casa-gallery-dorado .carousel-control-next:hover,
+#casa-gallery-namora .carousel-control-prev:hover,
+#casa-gallery-namora .carousel-control-next:hover,
+#casa-gallery-serranos .carousel-control-prev:hover,
+#casa-gallery-serranos .carousel-control-next:hover {
     background-color: #b04a2d;
     opacity: 1;
 }
 
-/* Icono de Flecha (Blanco y Grande) */
 .carousel-icon {
     color: #FFFFFF;
     font-size: 2rem;
@@ -432,13 +479,11 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     margin-top: -4px;
 }
 
-/* Ocultar iconos por defecto */
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     display: none;
 }
 
-
-/* Botón Reservar Ahora */
 .btn-reservar-detalle {
     background-color: #2F4F4F;
     color: #FAF8F1;
@@ -449,24 +494,24 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     margin-top: 2.5rem;
     border: none;
     transition: all 0.3s ease;
-    box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     display: inline-block;
 }
+
 .btn-reservar-detalle:hover {
     background-color: #1a2c2c;
     color: #FAF8F1;
     transform: translateY(-2px);
 }
 
-/* Panel de Información */
 .info-panel {
-    background-color: #D8C3A5; 
+    background-color: #D8C3A5;
     color: #000000;
     padding: 0;
     height: 100%;
     min-height: 80vh;
-    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
     border-bottom: 15px solid #432918;
     border-radius: 0;
 }
@@ -510,20 +555,19 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     font-size: 1.2em;
 }
 
-/* ============================================= */
-/* 6. Página de Reserva (reserva.html)           */
-/* ============================================= */
 .body-reserva {
     background-color: #36454F !important;
 }
 
-.reserva-section { padding: 40px 20px; }
+.reserva-section {
+    padding: 40px 20px;
+}
 
 .reserva-form-panel {
     background-color: #A3B18A;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .reserva-form-panel .form-title {
@@ -547,7 +591,9 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     border-radius: 8px;
 }
 
-.reserva-form-panel .form-control:read-only { background-color: #e9ecef; }
+.reserva-form-panel .form-control:read-only {
+    background-color: #e9ecef;
+}
 
 .form-divider {
     border-color: #432918;
@@ -562,16 +608,24 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     font-weight: 700;
     border-radius: 8px;
 }
-.btn-guardar:hover { background-color: #1e3333; color: white; }
+
+.btn-guardar:hover {
+    background-color: #1e3333;
+    color: white;
+}
 
 .btn-confirmar {
-    background-color: #D95D39; 
+    background-color: #D95D39;
     color: white;
     padding: 12px;
     font-weight: 700;
     border-radius: 8px;
 }
-.btn-confirmar:hover { background-color: #b04a2d; color: white; }
+
+.btn-confirmar:hover {
+    background-color: #b04a2d;
+    color: white;
+}
 
 .reserva-summary-panel {
     text-align: center;
@@ -589,7 +643,7 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     border-radius: 15px;
     margin-bottom: 25px;
     width: 100%;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .total-box {
@@ -606,7 +660,10 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     margin-bottom: 20px;
 }
 
-.total-box .precio { font-size: 1.5rem; font-weight: 700; }
+.total-box .precio {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 .payment-dropdown {
     height: 50px;
@@ -614,8 +671,108 @@ h1, h2, h3, h4, h5, h6, .casa-detalle-title, .casas-title, .room-type-overlay {
     border-radius: 8px;
 }
 
-/* Ajustes para Móvil */
-@media (max-width: 768px) {
-    .reserva-form-panel .form-label { text-align: left; margin-bottom: 5px; }
-    .reserva-summary-panel { margin-top: 30px; }
+@media (max-width: 992px) {
+    .hero-section {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .casas-title {
+        font-size: 2rem;
+    }
+
+    .casa-title-detalle {
+        font-size: 2.5rem;
+    }
+
+    #casa-gallery .carousel-item img,
+    #casa-gallery-san-roque .carousel-item img,
+    #casa-gallery-ensenada .carousel-item img,
+    #casa-gallery-cipreses .carousel-item img,
+    #casa-gallery-sausalito .carousel-item img,
+    #casa-gallery-dorado .carousel-item img,
+    #casa-gallery-namora .carousel-item img,
+    #casa-gallery-serranos .carousel-item img {
+        height: 40vh;
+    }
+
+    #casa-gallery .carousel-control-prev,
+    #casa-gallery .carousel-control-next,
+    #casa-gallery-san-roque .carousel-control-prev,
+    #casa-gallery-san-roque .carousel-control-next,
+    #casa-gallery-ensenada .carousel-control-prev,
+    #casa-gallery-ensenada .carousel-control-next,
+    #casa-gallery-cipreses .carousel-control-prev,
+    #casa-gallery-cipreses .carousel-control-next,
+    #casa-gallery-sausalito .carousel-control-prev,
+    #casa-gallery-sausalito .carousel-control-next,
+    #casa-gallery-dorado .carousel-control-prev,
+    #casa-gallery-dorado .carousel-control-next,
+    #casa-gallery-namora .carousel-control-prev,
+    #casa-gallery-namora .carousel-control-next,
+    #casa-gallery-serranos .carousel-control-prev,
+    #casa-gallery-serranos .carousel-control-next {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    #casa-gallery .carousel-control-prev,
+    #casa-gallery-san-roque .carousel-control-prev,
+    #casa-gallery-ensenada .carousel-control-prev,
+    #casa-gallery-cipreses .carousel-control-prev,
+    #casa-gallery-sausalito .carousel-control-prev,
+    #casa-gallery-dorado .carousel-control-prev,
+    #casa-gallery-namora .carousel-control-prev,
+    #casa-gallery-serranos .carousel-control-prev {
+        left: 10px !important;
+    }
+
+    #casa-gallery .carousel-control-next,
+    #casa-gallery-san-roque .carousel-control-next,
+    #casa-gallery-ensenada .carousel-control-next,
+    #casa-gallery-cipreses .carousel-control-next,
+    #casa-gallery-sausalito .carousel-control-next,
+    #casa-gallery-dorado .carousel-control-next,
+    #casa-gallery-namora .carousel-control-next,
+    #casa-gallery-serranos .carousel-control-next {
+        right: 10px !important;
+    }
+
+    .detalle-left-column {
+        padding: 1rem;
+    }
+
+    .info-panel {
+        min-height: auto;
+        border-left: none;
+        border-top: 10px solid #432918;
+        border-bottom: none;
+        margin-top: 20px;
+    }
+
+    .reserva-summary-panel {
+        margin-top: 30px;
+    }
+
+    .summary-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-reservar-detalle {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .nav-custom {
+        padding: 10px;
+    }
 }

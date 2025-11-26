@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Inicialización de Modales ---
+    let habitacionSeleccionada = 'Individual'; 
+    let fechaLlegadaSeleccionada = '';
+    let fechaSalidaSeleccionada = '';
+    let metodoPagoSeleccionado = 'Efectivo';
+
     const reservaModalEl = document.getElementById('reservaModal');
     const loginModalEl = document.getElementById('loginModal');
     const registroModalEl = document.getElementById('registroModal');
@@ -11,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loginModalEl) loginModal = new bootstrap.Modal(loginModalEl);
     if (registroModalEl) registroModal = new bootstrap.Modal(registroModalEl);
     
-    // --- Lógica del Widget de Reserva (Página Inicio) ---
     const widgetDeReserva = document.getElementById('reservarBtn');
     if (widgetDeReserva) {
         flatpickr("#fecha-llegada", {
@@ -26,12 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Lógica para la Página de Reserva (reserva.html) ---
-    // AQUÍ ESTÁ LA CLAVE: Buscamos los inputs por su ID
     const reservaCheckin = document.getElementById('reserva-checkin');
     const reservaCheckout = document.getElementById('reserva-checkout');
 
-    // Si existen en la página, activamos el calendario
     if (reservaCheckin) {
         flatpickr(reservaCheckin, {
             dateFormat: "d/m/Y",
@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Confirmar Reserva
     const reservaPageForm = document.querySelector('.reserva-form-panel form');
     if (reservaPageForm) {
         reservaPageForm.addEventListener('submit', (event) => {
@@ -58,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Botones del Header (Login / Registro) ---
     const loginBtn = document.getElementById('loginBtn');
     const registerBtn = document.getElementById('registerBtn');
     
@@ -71,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Carrusel de la Página Principal ---
     const scrollContainer = document.querySelector('.scrolling-wrapper');
     const scrollNextBtn = document.getElementById('scroll-next');
     const scrollPrevBtn = document.getElementById('scroll-prev');
@@ -88,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollPrevBtn.addEventListener('click', () => scrollCarousel(-1));
     }
     
-    // --- Mostrar/Ocultar Contraseña ---
     const togglePassword = document.getElementById('togglePassword');
     const passwordInput = document.getElementById('login-password');
 
@@ -101,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Formulario de Registro ---
     const registroForm = document.getElementById('registroForm');
     if (registroForm) {
         const toggleRegistroPassword = document.getElementById('toggleRegistroPassword');
@@ -167,7 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Formulario de Iniciar Sesión ---
     const loginForm = document.querySelector('#loginModal form');
     if (loginForm) {
         loginForm.addEventListener('submit', (event) => {
