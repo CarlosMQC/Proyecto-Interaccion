@@ -29,14 +29,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    
     const reservaCheckin = document.getElementById('reserva-checkin');
     const reservaCheckout = document.getElementById('reserva-checkout');
+    const diasEstadiaInput = document.getElementById('dias-estadia');
+    const calcularDias = () => {
+        if (reservaCheckin.value && reservaCheckout.value) {
+            const [dia1, mes1, anio1] = reservaCheckin.value.split('/');
+            const [dia2, mes2, anio2] = reservaCheckout.value.split('/');
+            
+            const fecha1 = new Date(`${anio1}-${mes1}-${dia1}`);
+            const fecha2 = new Date(`${anio2}-${mes2}-${dia2}`);
+
+            const diferenciaTiempo = fecha2 - fecha1;
+            const diferenciaDias = Math.ceil(diferenciaTiempo / (1000 * 60 * 60 * 24));
+
+            if (diferenciaDias > 0) {
+                diasEstadiaInput.value = diferenciaDias;
+            } else {
+                diasEstadiaInput.value = 0;
+            }
+        }
+    };
 
     if (reservaCheckin) {
         flatpickr(reservaCheckin, {
             dateFormat: "d/m/Y",
             minDate: "today",
-            locale: "es"
+            locale: "es",
+            onChange: function(selectedDates, dateStr) {
+                calcularDias();
+            }
         });
     }
 
@@ -44,7 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
         flatpickr(reservaCheckout, {
             dateFormat: "d/m/Y",
             minDate: "today",
-            locale: "es"
+            locale: "es",
+            onChange: function(selectedDates, dateStr) {
+                calcularDias();
+            }
         });
     }
 
